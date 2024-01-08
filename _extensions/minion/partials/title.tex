@@ -1,0 +1,14 @@
+$if(title)$
+\title{\bigskip \bigskip $title$$if(thanks)$\thanks{$thanks$} $endif$ }
+$endif$
+
+\author{
+$for(by-author)$
+{\large $it.name.literal$$if(it.orcid)$~\orcidlink{$it.orcid$}$endif$}%
+$if(it.attributes.corresponding)$\thanks{Corresponding author.}$endif$ \\%
+$for(it.affiliations)${\normalsize\emph{$it.name$}} \\$endfor$%
+{\footnotesize \texttt{\url{$it.email$}}}\vspace*{0.2in}\newline $sep$ \and
+$endfor$
+}
+
+\date{}

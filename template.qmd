@@ -1,0 +1,46 @@
+---
+title: "Minion Quarto Template"
+author:
+- name: Kieran Healy
+  affiliation: Duke University
+  email: kieran.healy@duke.edu
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+abstract: "This is the abstract."
+bibliography: references.bib
+format:
+  minion-pdf: default
+---
+
+
+```{r}
+#| label: libraries
+#| include: false
+#| message: false
+#| warning: false
+
+
+library(tidyverse)
+library(here)
+library(janitor)
+library(socviz)
+library(ggrepel)
+
+## --------------------------------------------------------------------
+## Custom font and theme, omit if you don't have the myriad library
+## (https://github.com/kjhealy/myriad) and associated Adobe fonts.
+## --------------------------------------------------------------------
+library(showtext)
+showtext_auto()
+library(myriad)
+import_myriad_semi()
+
+theme_set(theme_myriad_semi())
+```
+
+
+## Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+

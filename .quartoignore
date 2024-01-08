@@ -1,0 +1,9 @@
+# Quarto automatically excludes common GitHub files
+# You can add files here that should be excluded when the template
+# is used in a directory.
+examples
+minion-testing-*
+_quarto.yml
+*.Rproj
+render.R
+TODO.md
