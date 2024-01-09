@@ -30,14 +30,17 @@ contributes:
       urlcolor: DarkSlateBlue
       citecolor: DarkSlateBlue
       link-citations: true
-
       biblio-title: "References"
-      biblio-config: false  # Don't use the default template's biblatex commands
-      cite-method: biblatex
-      biblatex-chicago: false  # Custom flag for enabling biblatex-chicago
-      biblio-style: apsr
-      biblatexoptions:
-        - backend=biber
+      # We should just be able to let citeproc manage things most of the time
+      citeproc: true
+      # biblio-config: false  # Don't use the default template's biblatex commands
+      # cite-method: biblatex
+      # biblatex-chicago: false  # Custom flag for enabling biblatex-chicago
+      # biblio-style: apa
+      # biblatexoptions:
+      #   - backend=biber
+      #   - citestyle=verbose
+      #   - bibstyle=verbose
 
       # The titlesec package provides its own mechanism for dealing with
       # inline/block headings, so we need to disable pandoc's support for it
