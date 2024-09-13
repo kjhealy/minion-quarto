@@ -15,14 +15,7 @@ contributes:
         - "partials/before-bib.tex"
       include-in-header:
         - "include-in-header.tex"
-
-      # # Document styling
-      # geometry:
-      #   - top=10pc     # 10p0
-      #   - bottom=10pc  # 10p0
-      #   - left=11pc    # 11p0
-      #   - right=11pc   # 11p0
-      #   - heightrounded
+      chapterstyle: article-4
 
       # Citations and links
       colorlinks: true
@@ -33,21 +26,6 @@ contributes:
       biblio-title: "References"
       # We should just be able to let citeproc manage things most of the time
       citeproc: true
-      # biblio-config: false  # Don't use the default template's biblatex commands
-      # cite-method: biblatex
-      # biblatex-chicago: false  # Custom flag for enabling biblatex-chicago
-      # biblio-style: apa
-      # biblatexoptions:
-      #   - backend=biber
-      #   - citestyle=verbose
-      #   - bibstyle=verbose
-
-      # The titlesec package provides its own mechanism for dealing with
-      # inline/block headings, so we need to disable pandoc's support for it
-      # (see https://stackoverflow.com/q/42916124/120898)
-      block-headings: false
-      # Indent paragraphs instead of adding space between them
-      indent: true
     html:
       theme: styles/pretty.scss
       template-partials:
