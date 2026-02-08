@@ -20,9 +20,23 @@ $endif$
 \addbibresource{$bibliography$}
 $endif$
 
+% ----------------------
+% Title block elements
+% ----------------------
+\usepackage{orcidlink}  % Create automatic ORCID icons/links
 
 $if(title)$
 \title{\bigskip \bigskip $title$$if(thanks)$\thanks{$thanks$} $endif$ }
+$endif$
+
+$if(subtitle)$
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\vskip 0.25em \large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{$subtitle$}
 $endif$
 
 \author{
@@ -35,3 +49,15 @@ $endfor$
 }
 
 \date{}
+
+
+% Typeset URLs in the same font as their parent environment
+%
+% This has to come at the end of the preamble, after any biblatex stuff because
+% some biblatex styles (like APA) define their own \urlstyle{}
+\usepackage{url}
+\urlstyle{same}
+
+% ---------------------------
+% END END-OF-PREAMBLE STUFF
+% ---------------------------

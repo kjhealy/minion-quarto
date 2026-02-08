@@ -28,6 +28,11 @@ contributes:
       biblio-title: "References"
       # We should just be able to let citeproc manage things most of the time
       citeproc: true
+      # Graphics device
+      fig-format: pdf
+      knitr:
+        opts_chunk:
+          dev: cairo_pdf
     html:
       theme: styles/pretty.scss
       template-partials:

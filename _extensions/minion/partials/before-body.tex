@@ -3,9 +3,6 @@ $if(has-frontmatter)$
 $endif$
 
 $if(title)$
-$if(beamer)$
-\frame{\titlepage}
-$else$
 \setkeys{Gin}{width=1\textwidth}
 \setromanfont[Mapping=tex-text,Numbers=OldStyle]{Minion Pro}
 \setsansfont[Mapping=tex-text]{Myriad Pro}
@@ -19,7 +16,6 @@ $else$
 
 \published{$date$}
 
-$endif$
 $endif$
 
 $if(title)$
