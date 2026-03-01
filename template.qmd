@@ -5,6 +5,7 @@ author:
   affiliation: Duke University
   email: kieran.healy@duke.edu
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
+spacing: single
 abstract: "This is the abstract."
 bibliography: references.bib
 format:
@@ -13,7 +14,7 @@ format:
 
 
 ```{r}
-#| label: libraries
+#| label: packages
 #| include: false
 #| message: false
 #| warning: false

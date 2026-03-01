@@ -1,11 +1,13 @@
 title: Minion
 author: Kieran Healy
-version: 0.0.1
+version: 0.0.2
 contributes:
   formats:
     common:
       date-format: full
     pdf:
+      filters:
+        - spacing.lua
       # Template components
       template-partials:
         - "partials/doc-class.tex"
@@ -19,6 +21,8 @@ contributes:
       # Font and page settings
       fontsize: 12pt
       sides: oneside
+      # can be single, half, or double
+      spacing: single
       # Citations and links
       colorlinks: true
       linkcolor: DarkSlateBlue

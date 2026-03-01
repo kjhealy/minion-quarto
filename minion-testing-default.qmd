@@ -8,13 +8,14 @@ author:
         name: Duke University
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 abstract: "This is the abstract."
+spacing: half
 bibliography: references.bib
 format:
   minion-pdf: default
 ---
 
 ```{r}
-#| label: libraries
+#| label: packages
 #| include: false
 #| message: false
 #| warning: false
