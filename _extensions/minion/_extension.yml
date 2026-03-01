@@ -17,7 +17,7 @@ contributes:
         - "include-in-header.tex"
       chapterstyle: article-4
       # Font and page settings
-      fontize: 11pt
+      fontsize: 12pt
       sides: oneside
       # Citations and links
       colorlinks: true
